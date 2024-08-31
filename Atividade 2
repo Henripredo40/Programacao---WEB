@@ -1,0 +1,17 @@
+const matrizBi = [ [1, 2], [3, 4], [5, 6] ];
+
+function transporMatriz(a) {
+    let a_string = "";
+    
+    // Transpor a matriz
+    for (let j = 0; j < a[0].length; j++) {
+        for (let i = 0; i < a.length; i++) {
+            a_string += a[i][j] + " ";
+        }
+        a_string += "\n";
+    }
+    
+    console.log(a_string);
+}
+
+transporMatriz(matrizBi);
